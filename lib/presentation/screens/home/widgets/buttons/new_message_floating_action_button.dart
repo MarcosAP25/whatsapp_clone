@@ -10,6 +10,7 @@ class NewMessageFloatingActionButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return FloatingActionButton(
       onPressed: _newMessage,
+      child: const Icon(Icons.message),
     );
   }
 }
