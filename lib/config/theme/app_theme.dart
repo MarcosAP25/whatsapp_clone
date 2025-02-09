@@ -4,10 +4,14 @@ class AppTheme {
   static ThemeData getTheme () => ThemeData(
     colorScheme: ColorScheme.light(
       primary: Colors.green,
-      secondary: Colors.green,
-      tertiary: Colors.green,
       onPrimary: Color.fromRGBO(11, 16, 20, 1),
-      onSecondary: Colors.red,
+      secondary: Colors.green.shade400.withAlpha(80),
+      tertiary: Colors.green,
+      error: Colors.red,
+      onError: Colors.white,
+      surface: Color.fromRGBO(11, 16, 20, 1),
+      onSurface: Colors.white,
+      onSurfaceVariant: Colors.grey
     ),
     scaffoldBackgroundColor: Color.fromRGBO(11, 16, 20, 1),
     appBarTheme: AppBarTheme(
@@ -28,6 +32,7 @@ class AppTheme {
       backgroundColor: Color.fromRGBO(11, 16, 20, 1),
       selectedItemColor: Colors.green,
       unselectedItemColor: Colors.grey,
+      
       
     ),
   );
